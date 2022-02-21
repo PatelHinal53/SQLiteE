@@ -67,7 +67,8 @@ namespace SQ
 
 
             }
-
+        Intent i = new Intent(Application.Context, typeof(ViewData));
+            StartActivity(i);
 
         }
 
