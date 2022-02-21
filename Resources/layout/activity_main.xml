@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+        
+   <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" STUDENTS MARKS"
+            android:gravity="center_horizontal"
+            android:textColor="#660033"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/titletext"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Enrollment No:"
+            android:textSize="20dp"
+            android:id="@+id/textView1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enr No."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/editText1"/>
+
+    </LinearLayout>
+
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Marks:"
+            android:textSize="20dp"
+            android:id="@+id/textView3"/>
+         <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Marks"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/editText3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:ignore="MissingDimension">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#660033"
+            android:id="@+id/buttonA"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#660033"
+            android:id="@+id/buttonV"/>
+    </LinearLayout>
+
+</LinearLayout>
